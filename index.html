@@ -1,25 +1,58 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Ikosaeder Helper</title>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="images/ikosaeder-152.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="white"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Hello World">
-  <meta name="msapplication-TileImage" content="images/ikosaeder-144.png">
-  <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta charset="utf-8">
+    <title>Ikosaeder Helper</title>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/ikosaeder-152.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Hello World">
+    <meta name="msapplication-TileImage" content="images/ikosaeder-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body class="fullscreen">
-  <div class="container">
-    <h1 class="title">Ikosaeder Helfer App</h1>
-    <div>Brauchst Du Hilfe mit Deinem Schweren Dolch?</div>
-  </div>
-  <script src="js/main.js"></script>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col">
+                <div>
+                    <h1 class="title">Ikosaeder Helfer App</h1>
+                    <div>Brauchst Du Hilfe mit Deinem Schweren Dolch?</div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Stärke" aria-label="strength">
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Geschicklichkeit" aria-label="dexterity">
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Magie" aria-label="magic">
+            </div>
+        </div>
+        <div class="row g-3">
+            <div class="col">
+                &nbsp;
+            </div>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="button" class="btn btn-primary">Würfeln</button>
+            <button type="button" class="btn btn-danger">Reset</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
