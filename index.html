@@ -17,39 +17,42 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body class="fullscreen">
-    <div class="container">
-        <div class="row g-3">
-            <div class="col">
-                <div>
-                    <h1 class="title">Ikosaeder Helfer App</h1>
-                    <div>Brauchst Du Hilfe mit Deinem Schweren Dolch?</div>
+    <div class="bg-image d-flex"
+         style="background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.9) 100%), url('./images/wuerfel-20-seitig.png'); height: 100vh; background-repeat: no-repeat no-repeat; background-position: center center;">
+        <div class="container justify-content-center" >
+            <div class="row g-3">
+                <div class="col">
+                    <div>
+                        <h1 class="title">Ikosaeder Helfer App</h1>
+                        <div>Brauchst Du Hilfe mit Deinem Schweren Dolch?</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row g-3">
-            <div class="col">
-                &nbsp;
+            <div class="row g-3">
+                <div class="col">
+                    &nbsp;
+                </div>
             </div>
-        </div>
-        <div class="row g-3">
-            <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Stärke" aria-label="strength">
+            <div class="row g-3">
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Stärke" aria-label="strength">
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Geschicklichkeit" aria-label="dexterity">
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" placeholder="Magie" aria-label="magic">
+                </div>
             </div>
-            <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Geschicklichkeit" aria-label="dexterity">
+            <div class="row g-3">
+                <div class="col">
+                    &nbsp;
+                </div>
             </div>
-            <div class="col-sm-4">
-                <input type="text" class="form-control" placeholder="Magie" aria-label="magic">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="button" class="btn btn-primary">Würfeln</button>
+                <button type="button" class="btn btn-danger">Reset</button>
             </div>
-        </div>
-        <div class="row g-3">
-            <div class="col">
-                &nbsp;
-            </div>
-        </div>
-        <div class="d-grid gap-2 col-6 mx-auto">
-            <button type="button" class="btn btn-primary">Würfeln</button>
-            <button type="button" class="btn btn-danger">Reset</button>
         </div>
     </div>
     <script src="js/main.js"></script>
