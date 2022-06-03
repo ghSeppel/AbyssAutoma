@@ -1,4 +1,7 @@
-$('.btn-number').click(function(e){
+//***
+// Counter Buttons & Fields
+
+$('.btn-number').click(function (e) {
     e.preventDefault();
     
     fieldName = $(this).attr('data-field');
@@ -68,3 +71,12 @@ $(".input-number").keydown(function (e) {
         e.preventDefault();
     }
 });
+
+// Roll D20 and Reset
+$("#roll").click(function (e) {
+    lngRoll = Math.floor(Math.random() * 20) + 1;
+    $("#lngResult").val(lngRoll).change();
+})
+$("#reset").click(function (e) {
+    $("#lngResult").val("--").change();
+})
