@@ -15,6 +15,8 @@
     <meta name="msapplication-TileImage" content="images/ikosaeder-144.png">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/myscripts.js"></script>
 </head>
 <body class="fullscreen">
     <div class="bg-image d-flex justify-content-center align-items-center"
@@ -49,9 +51,25 @@
                     &nbsp;
                 </div>
             </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button type="button" class="btn btn-primary">Würfeln</button>
-                <button type="button" class="btn btn-danger">Reset</button>
+            <div class="row g-3">
+                <div class="col-sm-4 mx-auto">
+                    <div class="input-group">
+                        <button type="button" class="btn btn-outline-secondary btn-number" disabled="disabled" data-type="minus" data-field="lngHealth">
+                            <img src="./images/dash-circle.svg" alt="Minus" width="32" height="32">
+                        </button>
+                        <input type="text" name="lngHealth" class="form-control input-number" style="text-align:center;" value="1" min="1" max="50">
+                        <button type="button" class="btn btn-outline-secondary btn-number" data-type="plus" data-field="lngHealth">
+                            <img src="./images/plus-circle.svg" alt="Plus" width="32" height="32">
+                        </button>
+                    </div>                
+                </div>
+                <div class="col-sm-4">
+                    &nbsp;
+                </div>
+                <div class="d-grid gap-2 col-sm-4">
+                    <button type="button" class="btn btn-primary">Würfeln</button>
+                    <button type="button" class="btn btn-danger">Reset</button>
+                </div>
             </div>
         </div>
     </div>
