@@ -5,23 +5,40 @@ var cnt = 0;
 var strPath = "./cards/";
 var arrCards = new Array(iCardCount - 1);
 
-resetCards();
+
+window.addEventListener("load", (event) => {
+    initializeCards();
+  });
+
+function initializeCards() {
+    initArray();
+    resetCards();
+    showNextCard();
+}
 
 function showNextCard() {
     cnt += 1;
-    if (cnt > iCardCount) {
+    if (cnt >= iCardCount) {
         resetCards();
         cnt = 0;
     }
     console.log(arrCards[cnt] + 1);
-    var strCard = "Card" + (arrCards[cnt] + 1) + ".png";
+    var strCard = "Card" + (arrCards[cnt]) + ".png";
     document.getElementById("AutomaCard").src = strPath + strCard;
 }
 
+function initArray() {
+    for (i=0; i < iCardCount; i++) {
+        arrCards[i] = i+1;
+    }
+}
 function resetCards() {
     var i;
     console.log("reshuffle");
     shuffle(arrCards);
+    document.getElementById("alertReshuffle").style.display = "block";
+    setTimeout(function(){document.getElementById("alertReshuffle").style.display = "none"}, 1000);
+
 }
 
 function getNextCard() {
