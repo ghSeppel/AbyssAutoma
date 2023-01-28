@@ -70,3 +70,16 @@ function shuffle(array) {
 
   return array;
 }
+
+function showPage1() {
+    document.getElementById("imgPage1").style.display = "block";
+}
+function hidePage1() {
+    document.getElementById("imgPage1").style.display = "none";
+}
+function showPage2() {
+    document.getElementById("imgPage2").style.display = "block";
+}
+function hidePage2() {
+    document.getElementById("imgPage2").style.display = "none";
+}
