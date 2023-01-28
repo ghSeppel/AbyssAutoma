@@ -13,7 +13,7 @@ function showNextCard() {
         resetCards();
         cnt = 0;
     }
-
+    console.log(arrCards[cnt] + 1);
     var strCard = "Card" + (arrCards[cnt] + 1) + ".png";
     document.getElementById("AutomaCard").src = strPath + strCard;
 }
