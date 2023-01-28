@@ -7,23 +7,21 @@ var arrCards = new Array(iCardCount - 1);
 
 resetCards();
 
-function nextCard() {
+function showNextCard() {
     cnt += 1;
     if (cnt > iCardCount) {
         resetCards();
         cnt = 0;
     }
 
-    var strCard = "Card" + getNextCard() + ".png";
+    var strCard = "Card" + (arrCards[cnt] + 1) + ".png";
     document.getElementById("AutomaCard").src = strPath + strCard;
 }
 
 function resetCards() {
     var i;
     console.log("reshuffle");
-    for (i=0; i < iCardCount; i++) {
-        arrCards[i] = 0;
-    }
+    shuffle(arrCards);
 }
 
 function getNextCard() {
@@ -36,4 +34,22 @@ function getNextCard() {
     }
     arrCards[i] = 1;
     return(i+1);
+}
+
+function shuffle(array) {
+  var m = array.length, t, i;
+
+  // While there remain elements to shuffle…
+  while (m) {
+
+    // Pick a remaining element…
+    i = Math.floor(Math.random() * m--);
+
+    // And swap it with the current element.
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+  }
+
+  return array;
 }
