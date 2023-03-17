@@ -22,6 +22,17 @@
         border-style:solid;
         border-width: 10px;
     }
+.border-10px {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border: 10px solid #000000;
+}
+
+.border-10px img {
+  position: relative;
+  z-index: 1;
+}    
 </style>
 <script src="./js/myscripts.js"></script>
 
@@ -56,7 +67,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <img src="./cards/Card1.png" class="rounded img-fluid border-dark border-10" id="AutomaCard" style="width: 75%;" alt="sorry - only works with graphics" onclick="showNextCard()">
+                <img src="./cards/Card1.png" class="rounded img-fluid border-10px" id="AutomaCard" style="width: 75%;" alt="sorry - only works with graphics" onclick="showNextCard()">
             </div>
             <div style="margin-top: 50px;">
                 <button type="button" class="btn btn-dark" onclick="showPage1()">Page 1</button>
